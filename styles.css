@@ -1,4 +1,3 @@
-/* Reset mặc định */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,6 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Header */
 .header {
     width: 100%;
     background-color: white;
@@ -17,7 +15,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Container chính */
 .container {
     width: 80%;
     max-width: 1200px;
@@ -26,7 +23,6 @@
     align-items: center;
 }
 
-/* Logo */
 .logo {
     display: flex;
     flex-direction: column;
@@ -37,7 +33,6 @@
     height: 50px;
 }
 
-/* Contact Info */
 .contact-info {
     display: flex;
     gap: 40px;
@@ -68,7 +63,6 @@
     opacity: 0.8;
 }
 
-/* Nút "GET A QUOTES" */
 .quote-btn {
     background-color: transparent;
     color: #014576;
@@ -85,7 +79,6 @@
     color: white;
 }
 
-/* Navigation Bar */
 nav {
     width: 80.22%;
     background-color: #011132;
@@ -93,7 +86,6 @@ nav {
     margin: 0 auto;
 }
 
-/* Menu Items */
 #main-menu {
     display: flex;
     justify-content: center;
@@ -103,23 +95,22 @@ nav {
 }
 
 #main-menu li {
-    margin: 0 12px; /* Reduce horizontal margin to bring items closer together */
-    position: relative; /* So we can add the slash as a pseudo-element */
+    margin: 0 12px; 
+    position: relative;
 }
 
 #main-menu li::after {
-    content: "/"; /* Add slash between items */
-    color: white;  /* Set color of the slash */
-    font-size: 18px; /* Adjust size of the slash */
+    content: "/";
+    color: white;  
+    font-size: 18px; 
     position: absolute;
-    right: -8px; /* Position the slash to the right of the current list item */
+    right: -8px; 
     top: 50%;
-    transform: translateY(-50%); /* Align the slash vertically */
+    transform: translateY(-50%); 
 }
 
-/* Remove the slash after the last item */
 #main-menu li:last-child::after {
-    content: ""; /* Remove the slash from the last item */
+    content: ""; /
 }
 
 #main-menu a {
@@ -131,11 +122,10 @@ nav {
     transition: 0.3s;
     border: none;
 }
-/* Khi hover hoặc nhấn vào */
 #main-menu a:hover, 
 #main-menu a:active, 
 #main-menu a:focus {
-    color: white;  /* Màu chữ sẽ chuyển thành trắng khi nhấn */
+    color: white; 
 }
 #icon{
     color: #555555;
@@ -144,23 +134,23 @@ nav {
     padding: 6px 10px;
 }
 #icon li {
-    margin-right: 10px; /* Thêm khoảng cách bên phải mỗi phần tử icon */
-    transition: color 0.3s; /* Thêm hiệu ứng chuyển màu */
+    margin-right: 10px; 
+    transition: color 0.3s;
 }
 
 #icon li:last-child {
-    margin-right: 0; /* Loại bỏ margin cho phần tử cuối cùng */
+    margin-right: 0;
 }
 #icon li:hover, 
 #icon li:active, 
 #icon li:focus {
-    color: white;  /* Màu chữ sẽ chuyển thành trắng khi nhấn */
+    color: white;  
 }
 body{
     margin: 0;
 }
 .slider {  
-    position: relative;  /* Đảm bảo slider là phần tử cha của dots */  
+    position: relative;  
     width: 1300px;  
     max-width: 100vw;  
     height: 700px;  
@@ -195,14 +185,11 @@ body{
 .list .item.active {
     opacity: 1;
 }
-/* LIST CHỨA ẢNH */
 .list {
     position: relative;
     width: 100%;
     height: 100%;
 }
-
-/* ITEM - MỖI ẢNH TRONG SLIDER */
 .list .item {
     position: absolute;
     width: 100%;
@@ -212,13 +199,12 @@ body{
     transform: scale(1);
 }
 
-/* ẢNH HIỆN TẠI */
 .list .item.active {
     opacity: 1;
     transform: scale(1);
 }
 
-/* HIỆU ỨNG MƯỢT MÀ */
+
 .fade { opacity: 0; transition: opacity 1s ease-in-out; }
 .fade.active { opacity: 1; }
 
@@ -251,14 +237,14 @@ body{
 
 .dots {
     position: absolute;
-    top: 50%;   /* Canh giữa theo chiều dọc của slider */
-    left: 0;    /* Đưa các dot sát viền trái của slider */
+    top: 50%;   
+    left: 0;    
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Xếp các dot theo chiều dọc */
-    align-items: flex-start; /* Canh các dot về phía trái */
-    z-index: 10; /* Đảm bảo các dot nằm trên cùng */
+    flex-direction: column; 
+    align-items: flex-start; 
+    z-index: 10; 
 }
 
 .dots li {
@@ -267,7 +253,7 @@ body{
     height: 12px;
     background-color: gray;
     border-radius: 50%;
-    margin: 5px 0;  /* Khoảng cách giữa các dot */
+    margin: 5px 0; 
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -277,3 +263,83 @@ body{
     width: 15px;
     height: 15px;
 }
+
+.container-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Ngăn không cho xuống hàng */
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 26%; /* Tăng kích thước một chút */
+    box-sizing: border-box;
+    padding: 15px; /* Tăng padding để làm to hơn */
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    text-align: center;
+    width: 26%; /* Giữ kích thước vừa phải */
+    min-height: 320px; /* Tăng chiều cao khối */
+    box-sizing: border-box;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.main-content::after {
+    content: ""; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px; /* Độ dày của gạch chân */
+    background-color: #007bff; /* Màu gạch chân (có thể thay đổi) */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.main-content:hover::after {
+    width: 100%; /* Khi di chuột vào, gạch chân mở rộng */
+    left: 0;
+}
+
+.main-content a{
+    text-decoration: none;
+    color: #000;
+}
+.main-content img {
+    margin: 0;
+}
+
+
+.main-content h4, 
+.main-content p {
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        width: 45%; /* Khi màn hình nhỏ hơn, mỗi hàng có 2 khối */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%; /* Khi màn hình nhỏ hơn, mỗi hàng 1 khối */
+    }
+}
+

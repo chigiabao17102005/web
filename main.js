@@ -1,7 +1,6 @@
 const dots = document.querySelectorAll('.dots li');
 const slides = document.querySelectorAll('.list .item');
 
-// Danh sách hiệu ứng
 const effects = [
     "fade", "slide-left", "slide-right", "slide-up", "slide-down",
     "zoom-in", "zoom-out", "rotate", "flip-horizontal", "flip-vertical"
@@ -10,12 +9,12 @@ const effects = [
 let currentIndex = 0;
 let slideInterval;
 
-// Chọn hiệu ứng ngẫu nhiên
+
 function getRandomEffect() {
     return effects[Math.floor(Math.random() * effects.length)];
 }
 
-// Chuyển đổi ảnh với hiệu ứng ngẫu nhiên
+
 function changeSlide(index) {
     let effect = getRandomEffect();
 
@@ -28,7 +27,7 @@ function changeSlide(index) {
     dots[index].classList.add("active");
 }
 
-// Khởi động slide đầu tiên
+
 changeSlide(currentIndex);
 
 
@@ -41,7 +40,7 @@ function startAutoSlide() {
 
 startAutoSlide();
 
-// Click vào dots để chuyển ảnh
+
 dots.forEach((dot, index) => {
     dot.addEventListener("click", () => {
         clearInterval(slideInterval);
