@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Giống Mẫu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .footer {
+            background-color: #0b1b3f;
+            color: white;
+            padding: 50px 10%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        .footer-section h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .footer-section img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        .recent-posts {
+            flex: 1;
+        }
+        .recent-posts li {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .recent-posts li:last-child {
+            border-bottom: none;
+        }
+        .recent-posts img {
+            order: -1;
+        }
+        .recent-posts .post-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .post-date {
+            font-size: 12px;
+            color: #ccc;
+            margin-top: 5px;
+        }
+        .newsletter input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: transparent;
+            border-radius: 5px;
+            font-size: 14px;
+            color: white;
+            outline: none;
+        }
+        .newsletter button {
+            width: 60%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .newsletter button:hover {
+            background-color: white;
+            color: #007bff;
+        }
+        .copyright {
+            text-align: center;
+            padding: 15px;
+            background-color: #09122b;
+            color: white;
+            font-size: 14px;
+        }
+        .footer-section h3 {
+            position: relative;
+        }
+        .footer-section h3:contains("SOLUTIONS")::after {
+            content: "\2022";
+            color: white;
+            font-size: 16px;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .footer-section ul li::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border: 1px solid white;
+            border-radius: 50%;
+            margin-right: 10px;
+            background-color: transparent;
+        }
+        .recent-posts ul li::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer">
+            <div class="footer-section">
+                <h3>ABOUT OUR CONSULTING</h3>
+                <p>That started from this tropic port aboard this tiny ship today still want by theam government they survive on up to thetre east side to a deluxe as soldiers of artics fortune.</p>
+                <p> Any Queries: (+1) 234 567 900</p>
+            </div>
+            <div class="footer-section recent-posts">
+                <h3>RECENT POSTS</h3>
+                <ul>
+                    <li>
+                        <img src="./images/blog/1.jpg" alt="Blog Image 1">
+                        <div class="post-info">
+                            <a href="#">Till wanted by them govern they survive as soldiers.</a>
+                            <span class="post-date">Feb 06, 2018</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/blog/2.jpg" alt="Blog Image 2">
+                        <div class="post-info">
+                            <a href="#">World don't move to beat of just one drum.</a>
+                            <span class="post-date">Mar 20, 2018</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>SOLUTIONS.</h3>
+                <ul>
+                    <li><a href="#">Travel and Aviation</a></li>
+                    <li><a href="#">Business Services</a></li>
+                    <li><a href="#">Consumer Products</a></li>
+                    <li><a href="#">Financial Services</a></li>
+                    <li><a href="#">Software Research</a></li>
+                    <li><a href="#">Quality Resourcing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>NEWSLETTER</h3>
+                <input type="text" placeholder="Name *">
+                <input type="email" placeholder="Email *">
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+        <div class="copyright">© Copyrights 2024. All Rights Reserved.</div>
+    </footer>
+</body>
+</html>
